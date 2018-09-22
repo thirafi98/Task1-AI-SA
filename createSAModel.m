@@ -9,8 +9,8 @@ SA.req.function = @(x,y)(-sin(x)*cos(y)*exp(1-sqrt(x^2+y^2 )/pi)); %function tha
 
 % settings of the model
 SA.set.coolingRate = 0.999; % cooling rate is the dumping temperature (for the decreases of temp)
-SA.set.maxAcceptTemp = 20; % maximum number iterations on same temperature with accept condition  
-SA.set.maxFailedTemp = 15; % maximum number iteration on same temperature with failed condition
+SA.set.maxAcceptTemp = 1; % maximum number iterations on same temperature with accept condition  
+SA.set.maxFailedTemp = 1; % maximum number iteration on same temperature with failed condition
 SA.set.stopTemp = 1; % condition of end iteration
 
 % initial start of the model
